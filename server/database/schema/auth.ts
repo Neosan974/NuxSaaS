@@ -13,8 +13,8 @@ export const user = pgTable('user', {
   role: text('role'),
   banned: boolean('banned'),
   banReason: text('ban_reason'),
-  banExpires: timestamp('ban_expires'),
-  stripeCustomerId: text('stripe_customer_id')
+  banExpires: timestamp('ban_expires')
+  // stripeCustomerId: text('stripe_customer_id')
 })
 
 export const account = pgTable('account', {
@@ -46,8 +46,8 @@ export const subscription = pgTable('subscription', {
   id: uuid('id').primaryKey(),
   plan: text('plan').notNull(),
   referenceId: text('reference_id').notNull(),
-  stripeCustomerId: text('stripe_customer_id'),
-  stripeSubscriptionId: text('stripe_subscription_id'),
+  // stripeCustomerId: text('stripe_customer_id'),
+  // stripeSubscriptionId: text('stripe_subscription_id'),
   status: text('status'),
   periodStart: timestamp('period_start'),
   periodEnd: timestamp('period_end'),
