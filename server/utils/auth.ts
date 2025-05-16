@@ -16,6 +16,10 @@ console.log(`Base URL is ${runtimeConfig.public.baseURL}`)
 const createBetterAuth = () => betterAuth({
   baseURL: runtimeConfig.public.baseURL,
   secret: runtimeConfig.betterAuthSecret,
+  trustedOrigins: [
+    // 'http://localhost:3000',
+    'http://localhost:3001'
+  ],
   database: drizzleAdapter(
     getDB(),
     {

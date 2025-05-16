@@ -9,4 +9,5 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "run", "dev"]
+# Run migrations before starting the app
+CMD npm run db:generate && npm run db:migrate && npm run dev
