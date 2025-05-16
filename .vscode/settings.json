@@ -45,9 +45,14 @@
   "vitest.nodeExecutable": "~/.nvm/versions/node/v22.15.0/bin/node",
   "cSpell.words": [
     "github",
+    "iconify",
     "nuxsaas",
+    "nuxt",
     "NUXT",
+    "nuxtjs",
+    "ofetch",
     "postgres",
-    "postgresql"
+    "postgresql",
+    "vueuse"
   ]
 }
